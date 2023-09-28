@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-
+import logo from "../../assets/logo.svg";
 const Rb = styled.div`
   display: flex;
   justify-content: center;
@@ -18,11 +18,9 @@ const Rb = styled.div`
 `;
 
 const SvgBlock = ({ svg }) => {
-  const SvgIcon = require(`../../assets/${svg}`).default;
-  //console.log(SvgIcon);
   return (
     <Rb id="svgBlock">
-      <img src={SvgIcon} alt="Services" />
+      <img src={logo} alt="wildfire logo" />
     </Rb>
   );
 };
